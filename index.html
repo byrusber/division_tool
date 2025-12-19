@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+    
+    <main class="container">
+        <div class="card">
+            <header>
+                <h1>Division Tool</h1>
+                <p>Enter two numbers to calculate the quotient.</p>
+            </header>
+
+            <div class="input-group">
+                <label for="num1">Dividend (Number 1)</label>
+                <input type="number" id="num1" placeholder="Enter first number">
+            </div>
+
+            <div class="divider-icon">
+                <span>&divide;</span>
+            </div>
+
+            <div class="input-group">
+                <label for="num2">Divisor (Number 2)</label>
+                <input type="number" id="num2" placeholder="Enter second number">
+            </div>
+
+            <button id="calculateBtn">Calculate Result</button>
+
+            <div class="result-container" id="resultContainer">
+                <span class="label">Result</span>
+                <div class="value" id="resultValue">--</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
